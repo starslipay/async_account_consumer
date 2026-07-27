@@ -1,0 +1,14 @@
+AccountMgrRpc:
+  Etcd:
+    Hosts:
+      - etcd:2379
+    Key: accountmgr.rpc
+
+KqConf:
+  Name: c2c_async_account_consumer
+  Brokers:
+    - kafka:29092
+  Group: c2c_async_account_consumer
+  Topic: topic_c2c_async_transfer
+  Offset: first
+  Consumers: 3
