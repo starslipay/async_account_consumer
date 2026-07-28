@@ -10,5 +10,5 @@ KqConf:
     - kafka:29092
   Group: c2c_async_account_consumer
   Topic: topic_c2c_async_transfer
-  Offset: first
+  Offset: last
   Consumers: 3
