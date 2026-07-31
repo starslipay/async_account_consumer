@@ -8,4 +8,5 @@ import (
 type Config struct {
 	AccountMgrRpc zrpc.RpcClientConf
 	KqConf        kq.KqConf
+	KqConfC2B     kq.KqConf
 }

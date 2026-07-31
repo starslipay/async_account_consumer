@@ -12,3 +12,15 @@ KqConf:
   Topic: topic_c2c_async_transfer
   Offset: last
   Consumers: 3
+
+KqConfC2B:
+  Name: c2b_async_account_consumer
+  Brokers:
+    - kafka:29092
+  Group: c2b_async_account_consumer
+  Topic: topic_c2b_async_transfer
+  Offset: last
+  Consumers: 3
+
+# 设计死信队列
+# 核对脚本设计

@@ -24,3 +24,10 @@ func (c *AccountMgrClient) C2CAsyncAccount(transactionId string) (*account_mgr_p
 		TransactionId: transactionId,
 	})
 }
+
+func (c *AccountMgrClient) C2BAsyncAccount(transactionId string) (*account_mgr_pb.C2BAsyncAccountRsp, error) {
+	client := account_mgr_pb.NewAccountMgrClient(c.cli.Conn())
+	return client.C2BAsyncAccount(context.Background(), &account_mgr_pb.C2BAsyncAccountReq{
+		TransactionId: transactionId,
+	})
+}
