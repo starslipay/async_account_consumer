@@ -7,7 +7,9 @@ AccountMgrRpc:
 KqConf:
   Name: c2c_async_account_consumer
   Brokers:
-    - kafka:29092
+    - kafka1:29092
+    - kafka2:29092
+    - kafka3:29092
   Group: c2c_async_account_consumer
   Topic: topic_c2c_async_transfer
   Offset: last
@@ -16,7 +18,9 @@ KqConf:
 KqConfC2B:
   Name: c2b_async_account_consumer
   Brokers:
-    - kafka:29092
+    - kafka1:29092
+    - kafka2:29092
+    - kafka3:29092
   Group: c2b_async_account_consumer
   Topic: topic_c2b_async_transfer
   Offset: last
