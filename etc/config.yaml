@@ -26,5 +26,16 @@ KqConfC2B:
   Offset: last
   Consumers: 3
 
+KqConfB2C:
+  Name: b2c_async_account_consumer
+  Brokers:
+    - kafka1:29092
+    - kafka2:29092
+    - kafka3:29092
+  Group: b2c_async_account_consumer
+  Topic: topic_b2c_async_transfer
+  Offset: last
+  Consumers: 3
+
 # 设计死信队列
 # 核对脚本设计
